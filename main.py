@@ -3,7 +3,7 @@ from textwrap import dedent
 from crewai import Agent, Task, Crew, Process
 from tools.scraper_tools import ScraperTools 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "xxxxxxxx"
 
 # You can choose to use a local model through Ollama for example. See ./docs/how-to/llm-connections.md for more information.
 # from langchain_community.llms import Ollama
