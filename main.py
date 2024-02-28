@@ -2,8 +2,12 @@ import os
 from textwrap import dedent
 from crewai import Agent, Task, Crew, Process
 from tools.scraper_tools import ScraperTools 
+from dotenv import load_dotenv
 
-os.environ["OPENAI_API_KEY"] = "xxxxxxxx"
+# use the .env file to load the API key
+load_dotenv()
+
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 # You can choose to use a local model through Ollama for example. See ./docs/how-to/llm-connections.md for more information.
 # from langchain_community.llms import Ollama
